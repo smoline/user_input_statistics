@@ -1,20 +1,15 @@
-print "What is the first number? "
-number1 = gets.chomp.to_f
+#Adventurer Mode
 
-print "What is the second number? "
-number2 = gets.chomp.to_f
+numbers = []
+print "Please enter your numbers separated with a space: "
 
-print "What is the third number? "
-number3 = gets.chomp.to_f
+numbers = gets.chomp.split(' ')
 
-print "What is the fourth number? "
-number4 = gets.chomp.to_f
+total = 0
 
-print "What is the fifth number? "
-number5 = gets.chomp.to_f
+numbers.each { |x| total += x.to_f }
 
-total = number1 + number2 + number3 + number4 + number5
-average_num = total / 5
+average_num = total / numbers.length
 
 puts "These numbers total #{total}"
 puts "The average of these numbers is #{average_num}"
