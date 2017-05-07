@@ -7,6 +7,9 @@ if input == "strings"
   print "Please enter your first word: "
   input1 = gets.chomp
   # Need an error here if input is a number
+  # if input1.to_i != 0
+  #   puts "That is not a string"
+  # else
   strings << input1
   while input1 != ""
     print "Please enter another word: "
